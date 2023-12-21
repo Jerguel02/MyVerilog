@@ -27,7 +27,7 @@ module FF_D_Testbench;
 	// Inputs
 	reg clk;
 	reg D;
-
+	reg pre, clr;
 	// Outputs
 	wire Q;
 	wire Qn;
@@ -36,30 +36,40 @@ module FF_D_Testbench;
 	D_FF uut (
 		.clk(clk), 
 		.D(D), 
+		.pre(pre),
+		.clr(clr),
 		.Q(Q), 
 		.Qn(Qn)
 	);
 
-	initial begin
+initial begin
 		// Initialize Inputs
-		clk = 0;
 		D = 0;
-
+		clk = 0;
+		clr = 0;
+		pre = 0;
 		// Wait 100 ns for global reset to finish
 		#100;
         
 		// Add stimulus here
-
+		clr = 1;
+		pre = 0;
+		#100;
+		clr = 0;
+		pre = 1;
+		#100;
+		pre = 1; clr = 1;
 	end
-	always
+
+    always
 		begin
 			clk = ~clk;
-			#10;
+			#20;
 		end
 	always
 		begin
 			D = ~D;
-			#25;
+			#60;
 		end
 endmodule
 

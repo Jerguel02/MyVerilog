@@ -2,27 +2,27 @@ Command line:
    FF_D_Testbench_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50792
+     -socket  50361
 
-Mon Dec 18 23:51:44 2023
+Thu Dec 21 16:23:17 2023
 
 
- Elaboration Time: 0.046875 sec
+ Elaboration Time: 0.015625 sec
 
- Current Memory Usage: 5150.88 Meg
+ Current Memory Usage: 5150.89 Meg
 
- Total Signals          : 17
- Total Nets             : 17
- Total Signal Drivers   : 9
+ Total Signals          : 20
+ Total Nets             : 19
+ Total Signal Drivers   : 11
  Total Blocks           : 3
  Total Primitive Blocks : 2
- Total Processes        : 14
- Total Traceable Variables  : 22
- Total Scalar Nets and Variables : 101
+ Total Processes        : 17
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 104
 
- Total Simulation Time: 0.1875 sec
+ Total Simulation Time: 0.21875 sec
 
- Current Memory Usage: 4993.59 Meg
+ Current Memory Usage: 4679.03 Meg
 
-Mon Dec 18 23:52:55 2023
+Thu Dec 21 16:25:49 2023
 

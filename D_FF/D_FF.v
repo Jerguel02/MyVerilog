@@ -19,12 +19,26 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module D_FF(
-	input clk, D,
-	output reg Q, Qn
+	input clk, D, pre, clr,
+	output reg Q,
+	output Qn
     );
+initial
+	begin
+		Q <= 0;
+	end
 always @(posedge clk)
 	begin
-		Q <= D;
-		Qn <= ~D;
+		if (~clr && pre)
+			Q <= 1'b0;
+		else if (~pre && clr)
+			Q <= 1'b1;
+		else if (~pre && ~clr)
+			Q <= 1'bX;
+		else
+			begin
+				Q <= D;
+			end
 	end
+assign Qn = ~Q;
 endmodule

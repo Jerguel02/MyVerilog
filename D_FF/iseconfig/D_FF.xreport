@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-12-18T23:55:12</DateModified>
+  <DateModified>2023-12-21T16:17:10</DateModified>
   <ModuleName>D_FF</ModuleName>
   <SummaryTimeStamp>2023-12-18T23:49:23</SummaryTimeStamp>
-  <SavedFilePath>D:/Verilog/D_FF/iseconfig/D_FF.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Verilog/D_FF</ImplementationReportsDirectory>
+  <SavedFilePath>D:/Verilog/MyVerilog/D_FF/iseconfig/D_FF.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/Verilog/MyVerilog/D_FF\</ImplementationReportsDirectory>
   <DateInitialized>2023-12-18T23:41:09</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

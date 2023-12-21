@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: D_FF.prj
 
@@ -105,7 +105,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\Verilog\D_FF\D_FF.v" into library work
+Analyzing Verilog file "D:\Verilog\MyVerilog\D_FF\D_FF.v" into library work
 Parsing module <D_FF>.
 
 =========================================================================
@@ -119,19 +119,18 @@ Elaborating module <D_FF>.
 =========================================================================
 
 Synthesizing Unit <D_FF>.
-    Related source file is "D:\Verilog\D_FF\D_FF.v".
-    Found 1-bit register for signal <Qn>.
+    Related source file is "D:\Verilog\MyVerilog\D_FF\D_FF.v".
     Found 1-bit register for signal <Q>.
     Summary:
-	inferred   2 D-type flip-flop(s).
+	inferred   1 D-type flip-flop(s).
 Unit <D_FF> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 2
- 1-bit register                                        : 2
+# Registers                                            : 1
+ 1-bit register                                        : 1
 
 =========================================================================
 
@@ -144,8 +143,8 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 2
- Flip-Flops                                            : 2
+# Registers                                            : 1
+ Flip-Flops                                            : 1
 
 =========================================================================
 
@@ -158,6 +157,7 @@ Optimizing unit <D_FF> ...
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block D_FF, actual ratio is 0.
+FlipFlop Q has been replicated 1 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
 
@@ -189,14 +189,16 @@ Top Level Output File Name         : D_FF.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1
+# BELS                             : 3
 #      INV                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 1
 # FlipFlops/Latches                : 2
-#      FD                          : 2
+#      FDR                         : 2
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 3
-#      IBUF                        : 1
+# IO Buffers                       : 5
+#      IBUF                        : 3
 #      OBUF                        : 2
 
 Device utilization summary:
@@ -206,20 +208,21 @@ Selected Device : 6slx4tqg144-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                    1  out of   2400     0%  
-    Number used as Logic:                 1  out of   2400     0%  
+ Number of Slice Registers:               1  out of   4800     0%  
+ Number of Slice LUTs:                    3  out of   2400     0%  
+    Number used as Logic:                 3  out of   2400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      1
-   Number with an unused Flip Flop:       1  out of      1   100%  
-   Number with an unused LUT:             0  out of      1     0%  
-   Number of fully used LUT-FF pairs:     0  out of      1     0%  
+ Number of LUT Flip Flop pairs used:      4
+   Number with an unused Flip Flop:       3  out of      4    75%  
+   Number with an unused LUT:             1  out of      4    25%  
+   Number of fully used LUT-FF pairs:     0  out of      4     0%  
    Number of unique control sets:         1
 
 IO Utilization: 
- Number of IOs:                           4
- Number of bonded IOBs:                   4  out of    102     3%  
-    IOB Flip Flops/Latches:               2
+ Number of IOs:                           6
+ Number of bonded IOBs:                   6  out of    102     5%  
+    IOB Flip Flops/Latches:               1
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -257,8 +260,8 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: No path found
-   Minimum input arrival time before clock: 2.725ns
-   Maximum output required time after clock: 3.597ns
+   Minimum input arrival time before clock: 3.193ns
+   Maximum output required time after clock: 4.382ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -267,42 +270,43 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 2 / 2
+  Total number of paths / destination ports: 10 / 4
 -------------------------------------------------------------------------
-Offset:              2.725ns (Levels of Logic = 2)
-  Source:            D (PAD)
-  Destination:       Qn (FF)
+Offset:              3.193ns (Levels of Logic = 2)
+  Source:            clr (PAD)
+  Destination:       Q (FF)
   Destination Clock: clk rising
 
-  Data Path: D to Qn
+  Data Path: clr to Q
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.616  D_IBUF (D_IBUF)
-     INV:I->O              1   0.206   0.579  Qn_rstpot1_INV_0 (Qn_rstpot)
-     FD:D                      0.102          Qn
+     IBUF:I->O             2   1.222   0.721  clr_IBUF (clr_IBUF)
+     LUT2:I0->O            2   0.203   0.616  clr_pre_AND_1_o1 (clr_pre_AND_1_o)
+     FDR:R                     0.430          Q
     ----------------------------------------
-    Total                      2.725ns (1.530ns logic, 1.195ns route)
-                                       (56.1% logic, 43.9% route)
+    Total                      3.193ns (1.855ns logic, 1.338ns route)
+                                       (58.1% logic, 41.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              3.597ns (Levels of Logic = 1)
+Offset:              4.382ns (Levels of Logic = 2)
   Source:            Q (FF)
-  Destination:       Q (PAD)
+  Destination:       Qn (PAD)
   Source Clock:      clk rising
 
-  Data Path: Q to Q
+  Data Path: Q to Qn
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.447   0.579  Q (Q_OBUF)
-     OBUF:I->O                 2.571          Q_OBUF (Q)
+     FDR:C->Q              1   0.447   0.579  Q (Q_OBUF)
+     INV:I->O              1   0.206   0.579  Qn1_INV_0 (Qn_OBUF)
+     OBUF:I->O                 2.571          Qn_OBUF (Qn)
     ----------------------------------------
-    Total                      3.597ns (3.018ns logic, 0.579ns route)
-                                       (83.9% logic, 16.1% route)
+    Total                      4.382ns (3.224ns logic, 1.158ns route)
+                                       (73.6% logic, 26.4% route)
 
 =========================================================================
 
@@ -312,8 +316,8 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.60 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.45 secs
  
 --> 
 
