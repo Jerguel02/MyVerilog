@@ -1,0 +1,28 @@
+Command line:
+   Is31Days_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64499
+
+Fri Nov 24 21:40:52 2023
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5150.91 Meg
+
+ Total Signals          : 19
+ Total Nets             : 18
+ Total Signal Drivers   : 10
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 102
+
+ Total Simulation Time: 0.328125 sec
+
+ Current Memory Usage: 4679.05 Meg
+
+Fri Nov 24 21:43:34 2023
+

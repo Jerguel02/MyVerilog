@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Xilinx/PS2Keyboard2/tb_ps2_rx_isim_beh.exe" -prj "C:/Xilinx/PS2Keyboard2/tb_ps2_rx_beh.prj" "work.tb_ps2_rx" "work.glbl" 

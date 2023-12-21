@@ -1,0 +1,28 @@
+Command line:
+   FA4Bits_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64402
+
+Fri Nov 24 20:53:44 2023
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5150.27 Meg
+
+ Total Signals          : 40
+ Total Nets             : 34
+ Total Signal Drivers   : 17
+ Total Blocks           : 7
+ Total Primitive Blocks : 5
+ Total Processes        : 20
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 126
+
+ Total Simulation Time: 0.140625 sec
+
+ Current Memory Usage: 5464.84 Meg
+
+Fri Nov 24 20:54:19 2023
+

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Verilog/T_FF/T_FF_Testbench_isim_beh.exe" -prj "D:/Verilog/T_FF/T_FF_Testbench_beh.prj" "work.T_FF_Testbench" "work.glbl" 

@@ -1,0 +1,3 @@
+verilog work "Is31Days.v"
+verilog work "Is31Days_testbench.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

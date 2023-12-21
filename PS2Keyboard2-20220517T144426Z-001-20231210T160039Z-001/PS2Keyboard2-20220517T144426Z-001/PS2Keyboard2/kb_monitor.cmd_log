@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Xilinx/PS2Keyboard2/kb_monitor.xst" -ofn "C:/Xilinx/PS2Keyboard2/kb_monitor.syr" 

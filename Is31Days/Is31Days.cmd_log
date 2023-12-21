@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Verilog/Is31Days/Is31Days.xst" -ofn "D:/Verilog/Is31Days/Is31Days.syr" 
+xst -intstyle ise -ifn "D:/Verilog/Is31Days/Is31Days.xst" -ofn "D:/Verilog/Is31Days/Is31Days.syr" 

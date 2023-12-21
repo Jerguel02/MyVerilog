@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Verilog/LED7Seg_Cathode/LED7Seg.xst" -ofn "D:/Verilog/LED7Seg_Cathode/LED7Seg.syr" 
+xst -intstyle ise -ifn "D:/Verilog/LED7Seg_Cathode/LED7Seg.xst" -ofn "D:/Verilog/LED7Seg_Cathode/LED7Seg.syr" 

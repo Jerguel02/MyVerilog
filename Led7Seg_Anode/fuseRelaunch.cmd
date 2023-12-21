@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Verilog/Led7Seg_Anode/Led7Seg_Anode_Testbench_isim_beh.exe" -prj "D:/Verilog/Led7Seg_Anode/Led7Seg_Anode_Testbench_beh.prj" "work.Led7Seg_Anode_Testbench" "work.glbl" 
