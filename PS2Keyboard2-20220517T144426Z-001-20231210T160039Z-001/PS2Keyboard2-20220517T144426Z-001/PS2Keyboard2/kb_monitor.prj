@@ -1,7 +1,0 @@
-verilog work "uart_tx.v"
-verilog work "mod_m_counter.v"
-verilog work "fifo.v"
-verilog work "uart.v"
-verilog work "ps2_rx.v"
-verilog work "key2ascii.v"
-verilog work "kb_monitor.v"
