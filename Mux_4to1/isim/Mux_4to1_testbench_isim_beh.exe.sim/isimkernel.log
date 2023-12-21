@@ -1,0 +1,28 @@
+Command line:
+   Mux_4to1_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50693
+
+Thu Dec 21 19:08:17 2023
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5150.35 Meg
+
+ Total Signals          : 34
+ Total Nets             : 71
+ Total Signal Drivers   : 13
+ Total Blocks           : 6
+ Total Primitive Blocks : 4
+ Total Processes        : 16
+ Total Traceable Variables  : 27
+ Total Scalar Nets and Variables : 313
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 5150.35 Meg
+
+Thu Dec 21 19:08:38 2023
+
