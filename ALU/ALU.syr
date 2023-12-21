@@ -1,0 +1,421 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU"
+Output Format                      : NGC
+Target Device                      : xc6slx4-3-tqg144
+
+---- Source Options
+Top Module Name                    : ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Verilog\MyVerilog\ALU\ALU.v" into library work
+Parsing module <ALU>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ALU>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:\Verilog\MyVerilog\ALU\ALU.v".
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_3_OUT> created at line 36.
+    Found 9-bit adder for signal <n0055> created at line 35.
+    Found 8x8-bit multiplier for signal <n0026> created at line 37.
+    Found 9-bit 21-to-1 multiplexer for signal <ALU_Result> created at line 34.
+    Found 8-bit comparator greater for signal <B[7]_A[7]_LessThan_16_o> created at line 50
+    Found 8-bit comparator greater for signal <A[7]_B[7]_LessThan_18_o> created at line 51
+    Found 8-bit comparator equal for signal <A[7]_B[7]_equal_20_o> created at line 52
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+	inferred  19 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <div_8u_8u>.
+    Related source file is "".
+    Found 16-bit adder for signal <n0292> created at line 0.
+    Found 16-bit adder for signal <GND_3_o_b[7]_add_1_OUT> created at line 0.
+    Found 15-bit adder for signal <n0296> created at line 0.
+    Found 15-bit adder for signal <GND_3_o_b[7]_add_3_OUT> created at line 0.
+    Found 14-bit adder for signal <n0300> created at line 0.
+    Found 14-bit adder for signal <GND_3_o_b[7]_add_5_OUT> created at line 0.
+    Found 13-bit adder for signal <n0304> created at line 0.
+    Found 13-bit adder for signal <GND_3_o_b[7]_add_7_OUT> created at line 0.
+    Found 12-bit adder for signal <n0308> created at line 0.
+    Found 12-bit adder for signal <GND_3_o_b[7]_add_9_OUT> created at line 0.
+    Found 11-bit adder for signal <n0312> created at line 0.
+    Found 11-bit adder for signal <GND_3_o_b[7]_add_11_OUT> created at line 0.
+    Found 10-bit adder for signal <n0316> created at line 0.
+    Found 10-bit adder for signal <GND_3_o_b[7]_add_13_OUT> created at line 0.
+    Found 9-bit adder for signal <n0320> created at line 0.
+    Found 9-bit adder for signal <GND_3_o_b[7]_add_15_OUT> created at line 0.
+    Found 16-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Summary:
+	inferred  16 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+	inferred  57 Multiplexer(s).
+Unit <div_8u_8u> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 17
+ 10-bit adder                                          : 2
+ 11-bit adder                                          : 2
+ 12-bit adder                                          : 2
+ 13-bit adder                                          : 2
+ 14-bit adder                                          : 2
+ 15-bit adder                                          : 2
+ 16-bit adder                                          : 2
+ 9-bit adder                                           : 2
+ 9-bit addsub                                          : 1
+# Comparators                                          : 12
+ 10-bit comparator lessequal                           : 1
+ 11-bit comparator lessequal                           : 1
+ 12-bit comparator lessequal                           : 1
+ 13-bit comparator lessequal                           : 1
+ 14-bit comparator lessequal                           : 1
+ 15-bit comparator lessequal                           : 1
+ 16-bit comparator lessequal                           : 1
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 2
+ 8-bit comparator lessequal                            : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 76
+ 1-bit 2-to-1 multiplexer                              : 56
+ 8-bit 2-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 19
+# Xors                                                 : 1
+ 9-bit xor2                                            : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 9
+ 8-bit adder carry in                                  : 8
+ 9-bit addsub                                          : 1
+# Comparators                                          : 12
+ 10-bit comparator lessequal                           : 1
+ 11-bit comparator lessequal                           : 1
+ 12-bit comparator lessequal                           : 1
+ 13-bit comparator lessequal                           : 1
+ 14-bit comparator lessequal                           : 1
+ 15-bit comparator lessequal                           : 1
+ 16-bit comparator lessequal                           : 1
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 2
+ 8-bit comparator lessequal                            : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 76
+ 1-bit 2-to-1 multiplexer                              : 56
+ 8-bit 2-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 19
+# Xors                                                 : 1
+ 9-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <div_8u_8u> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU, actual ratio is 8.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ALU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 177
+#      GND                         : 1
+#      LUT1                        : 1
+#      LUT2                        : 6
+#      LUT3                        : 21
+#      LUT4                        : 16
+#      LUT5                        : 25
+#      LUT6                        : 60
+#      MUXCY                       : 19
+#      MUXF7                       : 5
+#      VCC                         : 1
+#      XORCY                       : 22
+# IO Buffers                       : 30
+#      IBUF                        : 21
+#      OBUF                        : 9
+# DSPs                             : 1
+#      DSP48A1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  129  out of   2400     5%  
+    Number used as Logic:               129  out of   2400     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    129
+   Number with an unused Flip Flop:     129  out of    129   100%  
+   Number with an unused LUT:             0  out of    129     0%  
+   Number of fully used LUT-FF pairs:     0  out of    129     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          30
+ Number of bonded IOBs:                  30  out of    102    29%  
+
+Specific Feature Utilization:
+ Number of DSP48A1s:                      1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 29.326ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1719437 / 9
+-------------------------------------------------------------------------
+Delay:               29.326ns (Levels of Logic = 26)
+  Source:            B<3> (PAD)
+  Destination:       ALU_Out<0> (PAD)
+
+  Data Path: B<3> to ALU_Out<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   1.222   1.458  B_3_IBUF (B_3_IBUF)
+     LUT5:I0->O            6   0.203   1.089  A[7]_B[7]_div_4/o<7>121 (A[7]_B[7]_div_4/o<7>12)
+     LUT6:I1->O            2   0.203   0.864  A[7]_B[7]_div_4/Mmux_a[0]_GND_3_o_MUX_90_o161 (A[7]_B[7]_div_4/a[6]_GND_3_o_MUX_84_o)
+     LUT6:I2->O            4   0.203   1.048  A[7]_B[7]_div_4/o<5>12 (A[7]_B[7]_div_4_OUT<5>)
+     LUT6:I0->O            2   0.203   0.981  A[7]_B[7]_div_4/Mmux_a[0]_GND_3_o_MUX_116_o161 (A[7]_B[7]_div_4/a[6]_GND_3_o_MUX_110_o)
+     LUT6:I0->O            2   0.203   0.721  A[7]_B[7]_div_4/o<4>2 (A[7]_B[7]_div_4/Madd_GND_3_o_b[7]_add_9_OUT_Madd_Madd_cy<6>)
+     LUT5:I3->O            5   0.203   1.079  A[7]_B[7]_div_4/o<4>11 (A[7]_B[7]_div_4_OUT<4>)
+     LUT6:I0->O            2   0.203   0.981  A[7]_B[7]_div_4/Mmux_a[0]_GND_3_o_MUX_140_o151 (A[7]_B[7]_div_4/a[5]_GND_3_o_MUX_135_o)
+     LUT6:I0->O            5   0.203   0.962  A[7]_B[7]_div_4/o<3>1 (A[7]_B[7]_div_4/Madd_GND_3_o_b[7]_add_11_OUT_Madd_Madd_cy<5>)
+     LUT6:I2->O           13   0.203   1.297  A[7]_B[7]_div_4/o<3>11 (A[7]_B[7]_div_4_OUT<3>)
+     LUT6:I0->O            3   0.203   1.015  A[7]_B[7]_div_4/Mmux_a[0]_GND_3_o_MUX_162_o141 (A[7]_B[7]_div_4/a[4]_GND_3_o_MUX_158_o)
+     LUT6:I0->O            1   0.203   0.808  A[7]_B[7]_div_4/o<2>1 (A[7]_B[7]_div_4/o<2>1)
+     LUT3:I0->O            1   0.205   0.684  A[7]_B[7]_div_4/o<2>24_SW0 (N6)
+     LUT6:I4->O           18   0.203   1.394  A[7]_B[7]_div_4/o<2>24 (A[7]_B[7]_div_4_OUT<2>)
+     LUT5:I0->O            1   0.203   0.944  A[7]_B[7]_div_4/Mmux_a[0]_GND_3_o_MUX_182_o131 (A[7]_B[7]_div_4/a[3]_GND_3_o_MUX_179_o)
+     LUT6:I0->O            2   0.203   0.864  A[7]_B[7]_div_4/o<1>3 (A[7]_B[7]_div_4/o<1>1)
+     LUT6:I2->O            1   0.203   0.000  A[7]_B[7]_div_4/o<1>1_F (N14)
+     MUXF7:I0->O           1   0.131   0.580  A[7]_B[7]_div_4/o<1>1 (A[7]_B[7]_div_4/o<1>2)
+     LUT6:I5->O            6   0.205   1.089  A[7]_B[7]_div_4/o<1>21 (A[7]_B[7]_div_4_OUT<1>)
+     LUT5:I0->O            2   0.203   0.981  A[7]_B[7]_div_4/Mmux_n028651 (A[7]_B[7]_div_4/n0286<4>)
+     LUT6:I0->O            1   0.203   0.000  A[7]_B[7]_div_4/o<0>1_F (N16)
+     MUXF7:I0->O           2   0.131   0.864  A[7]_B[7]_div_4/o<0>1 (A[7]_B[7]_div_4/o<0>2)
+     LUT6:I2->O            1   0.203   0.000  Mmux_ALU_Result2053_G (N19)
+     MUXF7:I1->O           1   0.140   0.580  Mmux_ALU_Result2053 (Mmux_ALU_Result2052)
+     LUT4:I3->O            1   0.205   0.579  Mmux_ALU_Result20515 (ALU_Out_0_OBUF)
+     OBUF:I->O                 2.571          ALU_Out_0_OBUF (ALU_Out<0>)
+    ----------------------------------------
+    Total                     29.326ns (8.464ns logic, 20.862ns route)
+                                       (28.9% logic, 71.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.28 secs
+ 
+--> 
+
+Total memory usage is 4487512 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
