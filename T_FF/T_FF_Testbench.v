@@ -28,6 +28,7 @@ module T_FF_Testbench;
 	reg T;
 	reg clk;
 	reg clr;
+	reg pre;
 	// Outputs
 	wire Q;
 	wire Qn;
@@ -36,6 +37,7 @@ module T_FF_Testbench;
 		.T(T), 
 		.clk(clk),
 		.clr(clr),
+		.pre(pre),
 		.Q(Q), 
 		.Qn(Qn)
 	);
@@ -45,12 +47,20 @@ module T_FF_Testbench;
 		T = 0;
 		clk = 0;
 		clr = 0;
+		pre = 0;
 		// Wait 100 ns for global reset to finish
 		#100;
         
 		// Add stimulus here
-
+		clr = 1;
+		pre = 0;
+		#100;
+		clr = 0;
+		pre = 1;
+		#100;
+		pre = 1; clr = 1;
 	end
+
     always
 		begin
 			clk = ~clk;
@@ -60,11 +70,6 @@ module T_FF_Testbench;
 		begin
 			T = ~T;
 			#60;
-		end
-	always
-		begin
-			clr = ~clr;
-			#35;
 		end
 endmodule
 

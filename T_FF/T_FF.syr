@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: T_FF.prj
 
@@ -105,7 +105,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\Verilog\T_FF\T_FF.v" into library work
+Analyzing Verilog file "D:\Verilog\MyVerilog\T_FF\T_FF.v" into library work
 Parsing module <T_FF>.
 
 =========================================================================
@@ -119,7 +119,7 @@ Elaborating module <T_FF>.
 =========================================================================
 
 Synthesizing Unit <T_FF>.
-    Related source file is "D:\Verilog\T_FF\T_FF.v".
+    Related source file is "D:\Verilog\MyVerilog\T_FF\T_FF.v".
     Found 1-bit register for signal <Q>.
     Summary:
 	inferred   1 D-type flip-flop(s).
@@ -188,14 +188,16 @@ Top Level Output File Name         : T_FF.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2
-#      INV                         : 2
+# BELS                             : 3
+#      INV                         : 1
+#      LUT2                        : 1
+#      LUT4                        : 1
 # FlipFlops/Latches                : 1
-#      FDRE                        : 1
+#      FDR                         : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 4
-#      IBUF                        : 2
+# IO Buffers                       : 5
+#      IBUF                        : 3
 #      OBUF                        : 2
 
 Device utilization summary:
@@ -206,19 +208,19 @@ Selected Device : 6slx4tqg144-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:               1  out of   4800     0%  
- Number of Slice LUTs:                    2  out of   2400     0%  
-    Number used as Logic:                 2  out of   2400     0%  
+ Number of Slice LUTs:                    3  out of   2400     0%  
+    Number used as Logic:                 3  out of   2400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      3
-   Number with an unused Flip Flop:       2  out of      3    66%  
-   Number with an unused LUT:             1  out of      3    33%  
-   Number of fully used LUT-FF pairs:     0  out of      3     0%  
+ Number of LUT Flip Flop pairs used:      4
+   Number with an unused Flip Flop:       3  out of      4    75%  
+   Number with an unused LUT:             1  out of      4    25%  
+   Number of fully used LUT-FF pairs:     0  out of      4     0%  
    Number of unique control sets:         1
 
 IO Utilization: 
- Number of IOs:                           5
- Number of bonded IOBs:                   5  out of    102     4%  
+ Number of IOs:                           6
+ Number of bonded IOBs:                   6  out of    102     5%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -255,9 +257,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 1.988ns (Maximum Frequency: 503.145MHz)
-   Minimum input arrival time before clock: 3.016ns
-   Maximum output required time after clock: 4.457ns
+   Minimum period: 1.405ns (Maximum Frequency: 711.617MHz)
+   Minimum input arrival time before clock: 3.155ns
+   Maximum output required time after clock: 4.453ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -266,10 +268,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 1.988ns (frequency: 503.145MHz)
+  Clock period: 1.405ns (frequency: 711.617MHz)
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               1.988ns (Levels of Logic = 1)
+Delay:               1.405ns (Levels of Logic = 1)
   Source:            Q (FF)
   Destination:       Q (FF)
   Source Clock:      clk rising
@@ -279,18 +281,18 @@ Delay:               1.988ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             2   0.447   0.616  Q (Q_OBUF)
-     INV:I->O              2   0.206   0.616  Qn1_INV_0 (Qn_OBUF)
-     FDRE:D                    0.102          Q
+     FDR:C->Q              3   0.447   0.651  Q (Q_OBUF)
+     LUT4:I3->O            1   0.205   0.000  Q_glue_set (Q_glue_set)
+     FDR:D                     0.102          Q
     ----------------------------------------
-    Total                      1.988ns (0.755ns logic, 1.233ns route)
-                                       (38.0% logic, 62.0% route)
+    Total                      1.405ns (0.754ns logic, 0.651ns route)
+                                       (53.7% logic, 46.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 2 / 2
+  Total number of paths / destination ports: 5 / 2
 -------------------------------------------------------------------------
-Offset:              3.016ns (Levels of Logic = 2)
+Offset:              3.155ns (Levels of Logic = 2)
   Source:            clr (PAD)
   Destination:       Q (FF)
   Destination Clock: clk rising
@@ -299,18 +301,18 @@ Offset:              3.016ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.579  clr_IBUF (clr_IBUF)
-     INV:I->O              1   0.206   0.579  clr_inv1_INV_0 (clr_inv)
-     FDRE:R                    0.430          Q
+     IBUF:I->O             2   1.222   0.721  clr_IBUF (clr_IBUF)
+     LUT2:I0->O            1   0.203   0.579  clr_pre_AND_1_o1 (clr_pre_AND_1_o)
+     FDR:R                     0.430          Q
     ----------------------------------------
-    Total                      3.016ns (1.858ns logic, 1.158ns route)
-                                       (61.6% logic, 38.4% route)
+    Total                      3.155ns (1.855ns logic, 1.300ns route)
+                                       (58.8% logic, 41.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              4.457ns (Levels of Logic = 2)
+Offset:              4.453ns (Levels of Logic = 2)
   Source:            Q (FF)
   Destination:       Qn (PAD)
   Source Clock:      clk rising
@@ -319,12 +321,12 @@ Offset:              4.457ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             2   0.447   0.616  Q (Q_OBUF)
-     INV:I->O              2   0.206   0.616  Qn1_INV_0 (Qn_OBUF)
+     FDR:C->Q              3   0.447   0.650  Q (Q_OBUF)
+     INV:I->O              1   0.206   0.579  Qn1_INV_0 (Qn_OBUF)
      OBUF:I->O                 2.571          Qn_OBUF (Qn)
     ----------------------------------------
-    Total                      4.457ns (3.224ns logic, 1.233ns route)
-                                       (72.3% logic, 27.7% route)
+    Total                      4.453ns (3.224ns logic, 1.229ns route)
+                                       (72.4% logic, 27.6% route)
 
 =========================================================================
 
@@ -336,14 +338,14 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    1.988|         |         |         |
+clk            |    1.405|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.36 secs
+Total CPU time to Xst completion: 4.56 secs
  
 --> 
 

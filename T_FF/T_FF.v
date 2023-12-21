@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module T_FF(
-	input T, clk, clr,
+	input T, clk, clr, pre,
 	output reg Q,
 	output Qn
     );
@@ -29,8 +29,12 @@ initial
 	end
 always @(posedge clk)
 	begin
-		if (~clr)
+		if (~clr && pre)
 			Q <= 1'b0;
+		else if (~pre && clr)
+			Q <= 1'b1;
+		else if (~pre && ~clr)
+			Q <= 1'bX;
 		else
 				if (T)
 					Q <= ~Q;
