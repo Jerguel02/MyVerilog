@@ -1,0 +1,28 @@
+Command line:
+   Gray2Bin_TestBench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55639
+
+Sun Dec 24 20:00:57 2023
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5150.28 Meg
+
+ Total Signals          : 16
+ Total Nets             : 21
+ Total Signal Drivers   : 7
+ Total Blocks           : 4
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 177
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 5464.85 Meg
+
+Sun Dec 24 20:01:47 2023
+

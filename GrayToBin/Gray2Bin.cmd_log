@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "D:/Verilog/MyVerilog/GrayToBin/Gray2Bin.xst" -ofn "D:/Verilog/MyVerilog/GrayToBin/Gray2Bin.syr" 
+xst -intstyle ise -ifn "D:/Verilog/MyVerilog/GrayToBin/Gray2Bin.xst" -ofn "D:/Verilog/MyVerilog/GrayToBin/Gray2Bin.syr" 
+xst -intstyle ise -ifn "D:/Verilog/MyVerilog/GrayToBin/Gray2Bin.xst" -ofn "D:/Verilog/MyVerilog/GrayToBin/Gray2Bin.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 Gray2Bin.ngc Gray2Bin.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Gray2Bin_map.ncd Gray2Bin.ngd Gray2Bin.pcf 
+par -w -intstyle ise -ol high -mt off Gray2Bin_map.ncd Gray2Bin.ncd Gray2Bin.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Gray2Bin.twx Gray2Bin.ncd -o Gray2Bin.twr Gray2Bin.pcf 
+xst -intstyle ise -ifn "D:/Verilog/MyVerilog/GrayToBin/Gray2Bin.xst" -ofn "D:/Verilog/MyVerilog/GrayToBin/Gray2Bin.syr" 

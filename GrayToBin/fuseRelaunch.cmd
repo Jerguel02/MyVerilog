@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Verilog/MyVerilog/GrayToBin/Gray2Bin_TestBench_isim_beh.exe" -prj "D:/Verilog/MyVerilog/GrayToBin/Gray2Bin_TestBench_beh.prj" "work.Gray2Bin_TestBench" "work.glbl" 
