@@ -12,7 +12,8 @@ Compiling module Gray2Bin
 Compiling module Gray2Bin_TestBench
 Compiling module glbl
 Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 3 Verilog Units
 Built simulation executable D:/Verilog/MyVerilog/GrayToBin/Gray2Bin_TestBench_isim_beh.exe
-Fuse Memory Usage: 28028 KB
-Fuse CPU Usage: 312 ms
+Fuse Memory Usage: 28016 KB
+Fuse CPU Usage: 781 ms

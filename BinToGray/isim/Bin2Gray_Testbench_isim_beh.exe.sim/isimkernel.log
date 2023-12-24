@@ -2,27 +2,27 @@ Command line:
    Bin2Gray_Testbench_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  55565
+     -socket  56502
 
-Sun Dec 24 19:35:46 2023
+Mon Dec 25 00:19:40 2023
 
 
- Elaboration Time: 0.0625 sec
+ Elaboration Time: 0.109375 sec
 
- Current Memory Usage: 5150.27 Meg
+ Current Memory Usage: 5150.28 Meg
 
- Total Signals          : 16
+ Total Signals          : 15
  Total Nets             : 21
  Total Signal Drivers   : 7
  Total Blocks           : 4
  Total Primitive Blocks : 2
- Total Processes        : 10
- Total Traceable Variables  : 23
- Total Scalar Nets and Variables : 177
+ Total Processes        : 11
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 181
 
- Total Simulation Time: 0.109375 sec
+ Total Simulation Time: 0.15625 sec
 
- Current Memory Usage: 4992.99 Meg
+ Current Memory Usage: 5464.85 Meg
 
-Sun Dec 24 19:36:46 2023
+Mon Dec 25 00:20:25 2023
 

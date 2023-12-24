@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.23 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.23 secs
  
 --> Reading design: Bin2Gray.prj
 
@@ -120,7 +120,7 @@ Elaborating module <Bin2Gray>.
 
 Synthesizing Unit <Bin2Gray>.
     Related source file is "D:\Verilog\MyVerilog\BinToGray\Bin2Gray.v".
-        PIN_NUM = 3
+        NUM_PIN = 3
     Summary:
 Unit <Bin2Gray> synthesized.
 
@@ -277,8 +277,8 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.85 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.16 secs
  
 --> 
 

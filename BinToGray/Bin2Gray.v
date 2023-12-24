@@ -28,9 +28,11 @@ module Bin2Gray(BIN, GRAY
     );
 	parameter NUM_PIN = 3;
 	input [NUM_PIN:0] BIN;
-	output [NUM_PIN:0] GRAY;
-	assign GRAY = CONVERSION(BIN);
-	
+	output reg [NUM_PIN:0] GRAY;
+	always @(BIN)
+		begin
+			GRAY <= CONVERSION(BIN);
+		end
 	function [NUM_PIN:0] CONVERSION;
 		input [NUM_PIN:0] BIN;
 		integer i;
