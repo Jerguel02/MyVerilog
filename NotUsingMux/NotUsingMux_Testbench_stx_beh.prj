@@ -1,0 +1,4 @@
+verilog isim_temp "MuxM.v"
+verilog isim_temp "NotUsingMux.v"
+verilog isim_temp "NotUsingMux_Testbench.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

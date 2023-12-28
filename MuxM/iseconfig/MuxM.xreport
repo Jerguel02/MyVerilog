@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-12-21T16:55:48</DateModified>
+  <DateModified>2023-12-28T23:55:01</DateModified>
   <ModuleName>MuxM</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/Verilog/MyVerilog/MuxM/iseconfig/MuxM.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Verilog/MyVerilog/MuxM</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/Verilog/MyVerilog/MuxM\</ImplementationReportsDirectory>
   <DateInitialized>2023-12-21T16:55:48</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

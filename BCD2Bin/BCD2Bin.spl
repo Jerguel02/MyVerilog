@@ -1,0 +1,8 @@
+[Inputs]
+=BCD[7:0]=
+[Outputs]
+=BIN[6:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel BCD2Bin
+

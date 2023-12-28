@@ -1,0 +1,28 @@
+Command line:
+   XORUsingMux_TestBench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63088
+
+Fri Dec 29 00:19:30 2023
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5150.87 Meg
+
+ Total Signals          : 21
+ Total Nets             : 17
+ Total Signal Drivers   : 9
+ Total Blocks           : 4
+ Total Primitive Blocks : 2
+ Total Processes        : 11
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 163
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 5150.87 Meg
+
+Fri Dec 29 00:20:00 2023
+

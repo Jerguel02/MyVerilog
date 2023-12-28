@@ -1,3 +1,4 @@
 xst -intstyle ise -ifn "D:/Verilog/MyVerilog/Bin2BCD/Bin2BCD.xst" -ofn "D:/Verilog/MyVerilog/Bin2BCD/Bin2BCD.syr" 
 xst -intstyle ise -ifn "D:/Verilog/MyVerilog/Bin2BCD/Bin2BCD.xst" -ofn "D:/Verilog/MyVerilog/Bin2BCD/Bin2BCD.syr" 
 xst -intstyle ise -ifn "D:/Verilog/MyVerilog/Bin2BCD/Bin2BCD.xst" -ofn "D:/Verilog/MyVerilog/Bin2BCD/Bin2BCD.syr" 
+xst -intstyle ise -ifn "D:/Verilog/MyVerilog/Bin2BCD/Bin2BCD.xst" -ofn "D:/Verilog/MyVerilog/Bin2BCD/Bin2BCD.syr" 

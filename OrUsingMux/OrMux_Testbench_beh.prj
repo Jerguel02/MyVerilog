@@ -1,0 +1,4 @@
+verilog work "MuxM.v"
+verilog work "OrUsingMux.v"
+verilog work "OrMux_Testbench.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

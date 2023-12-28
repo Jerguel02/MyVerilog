@@ -30,12 +30,12 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Bin2BCD.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Bin2BCD.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Bin2BCD.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Bin2BCD_Testbench_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Bin2BCD_Testbench_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Bin2BCD_Testbench_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Bin2BCD_Testbench_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Bin2BCD_Testbench_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Bin2BCD_Testbench_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Bin2BCD_envsettings.html"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Bin2BCD_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Bin2BCD_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Bin2BCD_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Bin2BCD_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -51,6 +51,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1703440784" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1703440784">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1703441437" xil_pn:in_ck="9067909635944232175" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1703441437">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -111,6 +112,7 @@
     </transform>
     <transform xil_pn:end_ts="1703440560" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1703440560">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1703440560" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7547975904418331945" xil_pn:start_ts="1703440560">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -136,11 +138,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1703440691" xil_pn:in_ck="97442004316984" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="4956628574678740387" xil_pn:start_ts="1703440684">
+    <transform xil_pn:end_ts="1703769128" xil_pn:in_ck="97442004316984" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="4956628574678740387" xil_pn:start_ts="1703769120">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Bin2BCD.lso"/>
       <outfile xil_pn:name="Bin2BCD.ngc"/>
       <outfile xil_pn:name="Bin2BCD.ngr"/>
@@ -148,6 +148,9 @@
       <outfile xil_pn:name="Bin2BCD.stx"/>
       <outfile xil_pn:name="Bin2BCD.syr"/>
       <outfile xil_pn:name="Bin2BCD.xst"/>
+      <outfile xil_pn:name="Bin2BCD_Testbench_beh.prj"/>
+      <outfile xil_pn:name="Bin2BCD_Testbench_stx_beh.prj"/>
+      <outfile xil_pn:name="Bin2BCD_stx_beh.prj"/>
       <outfile xil_pn:name="Bin2BCD_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>

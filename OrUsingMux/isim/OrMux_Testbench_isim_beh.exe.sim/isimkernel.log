@@ -1,0 +1,28 @@
+Command line:
+   OrMux_Testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63077
+
+Fri Dec 29 00:11:19 2023
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5150.88 Meg
+
+ Total Signals          : 21
+ Total Nets             : 19
+ Total Signal Drivers   : 8
+ Total Blocks           : 4
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 165
+
+ Total Simulation Time: 0.140625 sec
+
+ Current Memory Usage: 5150.88 Meg
+
+Fri Dec 29 00:11:31 2023
+

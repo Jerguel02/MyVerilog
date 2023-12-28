@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-12-25T00:58:00</DateModified>
+  <DateModified>2023-12-28T23:35:51</DateModified>
   <ModuleName>Bin2BCD</ModuleName>
   <SummaryTimeStamp>2023-12-25T00:56:27</SummaryTimeStamp>
   <SavedFilePath>D:/Verilog/MyVerilog/Bin2BCD/iseconfig/Bin2BCD.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Verilog/MyVerilog/Bin2BCD</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/Verilog/MyVerilog/Bin2BCD\</ImplementationReportsDirectory>
   <DateInitialized>2023-12-24T22:33:38</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Verilog/MyVerilog/Parity_Checker/Evenparity.xst" -ofn "D:/Verilog/MyVerilog/Parity_Checker/Evenparity.syr" 
+xst -intstyle ise -ifn "D:/Verilog/MyVerilog/Parity_Checker/Evenparity.xst" -ofn "D:/Verilog/MyVerilog/Parity_Checker/Evenparity.syr" 

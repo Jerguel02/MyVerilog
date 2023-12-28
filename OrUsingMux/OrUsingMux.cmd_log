@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Verilog/MyVerilog/OrUsingMux/OrUsingMux.xst" -ofn "D:/Verilog/MyVerilog/OrUsingMux/OrUsingMux.syr" 

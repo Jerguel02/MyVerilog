@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Mon Dec 25 00:58:04 2023">
+<application name="pn" timeStamp="Thu Dec 28 20:12:01 2023">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="AF2AB972629F424991D0D3F2A92472E2" type="project"/>
 <property name="ProjectIteration" value="0" type="project"/>
@@ -28,6 +28,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_selectedSimRootSourceNode_behav" value="work.Bin2BCD" type="process"/>
+<property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>
 <property name="PROP_AutoTop" value="true" type="design"/>
 <property name="PROP_DevFamily" value="Spartan6" type="design"/>
 <property name="PROP_DevDevice" value="xc6slx4" type="design"/>

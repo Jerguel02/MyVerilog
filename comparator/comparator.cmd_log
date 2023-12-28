@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Verilog/MyVerilog/comparator/comparator.xst" -ofn "D:/Verilog/MyVerilog/comparator/comparator.syr" 

@@ -2,14 +2,14 @@ Command line:
    MuxM_Testbench_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50464
+     -socket  63052
 
-Thu Dec 21 17:30:18 2023
+Thu Dec 28 23:55:09 2023
 
 
- Elaboration Time: 0.046875 sec
+ Elaboration Time: 0.015625 sec
 
- Current Memory Usage: 5150.85 Meg
+ Current Memory Usage: 5150.29 Meg
 
  Total Signals          : 18
  Total Nets             : 29
@@ -20,9 +20,9 @@ Thu Dec 21 17:30:18 2023
  Total Traceable Variables  : 22
  Total Scalar Nets and Variables : 152
 
- Total Simulation Time: 0.203125 sec
+ Total Simulation Time: 0.03125 sec
 
- Current Memory Usage: 4993.56 Meg
+ Current Memory Usage: 5150.29 Meg
 
-Thu Dec 21 17:31:42 2023
+Thu Dec 28 23:55:12 2023
 
