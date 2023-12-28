@@ -1,0 +1,3 @@
+verilog work "LED7Seg.v"
+verilog work "Bin2BCD.v"
+verilog work "SevenSeg_Cat.v"
