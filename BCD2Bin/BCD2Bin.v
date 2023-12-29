@@ -23,20 +23,14 @@
 //Using reverse double dabble algorithm
 //
 //
-module BCD2Bin #(parameter W = 8)( BCD, BIN );
-	
-	input [W-1:0] BCD;
-	output reg [W-1:0] BIN;
-	
-	integer i, j;
-	always @ (BCD)
-		begin
-			for (i=0; i<=W-1; i=i+1) begin BIN[i] = 0; end
-			BIN[W-1:0] = BCD;
-			for (i=W-1; i>=3; i = i-1)
-				for (j=0; j<(W-i-1)/3; j=j+1)
-					if (BIN[W-i-4*j -:4]>=8) begin BIN[W-i-4*j -:4] = BIN[W-i-4*j -: 4] - 4'b0011; end
-				
-		end
+module BCD2Bin (input [7:0]BCD, output [6:0]BIN);
+
+	wire [7:0] S;
+	wire [1:0]Cout;
+	Adder_Subtractor A_S1(BCD[1], BCD[2], BCD[3], BCD[5], BCD[4], BCD[5], BCD[4], 1'b0, 1'b0, S[0], S[1], S[2], S[3], Cout[0]);
+	Adder_Subtractor A_S2(S[2], S[3], Cout[0], 1'b0, BCD[6], BCD[7], BCD[6], BCD[7], 1'b0, BIN[3], BIN[4], BIN[5], BIN[6], Cout[1]);
+	assign BIN[1] = S[0];
+	assign BIN[2] = S[1];
+	assign BIN[0] = BCD[0];
 endmodule
 

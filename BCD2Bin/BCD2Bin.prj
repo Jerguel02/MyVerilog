@@ -1,1 +1,3 @@
+verilog work "FullAdder1Bit.v"
+verilog work "Adder_Subtractor.v"
 verilog work "BCD2Bin.v"

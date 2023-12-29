@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-12-29T00:24:37</DateModified>
+  <DateModified>2023-12-29T17:22:00</DateModified>
   <ModuleName>SevenSeg_Cat</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/Verilog/MyVerilog/SevenSegDisplayUsingBCD/iseconfig/SevenSeg_Cat.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Verilog/MyVerilog/SevenSegDisplayUsingBCD</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/Verilog/MyVerilog/SevenSegDisplayUsingBCD\</ImplementationReportsDirectory>
   <DateInitialized>2023-12-29T00:24:37</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

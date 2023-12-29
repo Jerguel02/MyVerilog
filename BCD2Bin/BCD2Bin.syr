@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.24 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.25 secs
  
 --> Reading design: BCD2Bin.prj
 
@@ -105,6 +105,10 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Analyzing Verilog file "D:\Verilog\MyVerilog\BCD2Bin\FullAdder1Bit.v" into library work
+Parsing module <FullAdder1Bit>.
+Analyzing Verilog file "D:\Verilog\MyVerilog\BCD2Bin\Adder_Subtractor.v" into library work
+Parsing module <Adder_Subtractor>.
 Analyzing Verilog file "D:\Verilog\MyVerilog\BCD2Bin\BCD2Bin.v" into library work
 Parsing module <BCD2Bin>.
 
@@ -114,21 +118,38 @@ Parsing module <BCD2Bin>.
 
 Elaborating module <BCD2Bin>.
 
+Elaborating module <Adder_Subtractor>.
+
+Elaborating module <FullAdder1Bit>.
+
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <BCD2Bin>.
     Related source file is "D:\Verilog\MyVerilog\BCD2Bin\BCD2Bin.v".
-        W = 8
+INFO:Xst:3210 - "D:\Verilog\MyVerilog\BCD2Bin\BCD2Bin.v" line 31: Output port <c> of the instance <A_S2> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <BCD2Bin> synthesized.
 
+Synthesizing Unit <Adder_Subtractor>.
+    Related source file is "D:\Verilog\MyVerilog\BCD2Bin\Adder_Subtractor.v".
+    Summary:
+Unit <Adder_Subtractor> synthesized.
+
+Synthesizing Unit <FullAdder1Bit>.
+    Related source file is "D:\Verilog\MyVerilog\BCD2Bin\FullAdder1Bit.v".
+    Summary:
+Unit <FullAdder1Bit> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# Xors                                                 : 24
+ 1-bit xor2                                            : 24
+
 =========================================================================
 
 =========================================================================
@@ -139,7 +160,10 @@ Found no macro
 =========================================================================
 Advanced HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# Xors                                                 : 24
+ 1-bit xor2                                            : 24
+
 =========================================================================
 
 =========================================================================
@@ -179,11 +203,15 @@ Top Level Output File Name         : BCD2Bin.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1
-#      GND                         : 1
-# IO Buffers                       : 24
+# BELS                             : 9
+#      LUT2                        : 1
+#      LUT3                        : 1
+#      LUT4                        : 1
+#      LUT5                        : 4
+#      LUT6                        : 2
+# IO Buffers                       : 15
 #      IBUF                        : 8
-#      OBUF                        : 16
+#      OBUF                        : 7
 
 Device utilization summary:
 ---------------------------
@@ -192,17 +220,19 @@ Selected Device : 6slx4tqg144-3
 
 
 Slice Logic Utilization: 
+ Number of Slice LUTs:                    9  out of   2400     0%  
+    Number used as Logic:                 9  out of   2400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      0
-   Number with an unused Flip Flop:       0  out of      0         
-   Number with an unused LUT:             0  out of      0         
-   Number of fully used LUT-FF pairs:     0  out of      0         
+ Number of LUT Flip Flop pairs used:      9
+   Number with an unused Flip Flop:       9  out of      9   100%  
+   Number with an unused LUT:             0  out of      9     0%  
+   Number of fully used LUT-FF pairs:     0  out of      9     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                          24
- Number of bonded IOBs:                  24  out of    102    23%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    102    14%  
 
 Specific Feature Utilization:
 
@@ -237,7 +267,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 4.372ns
+   Maximum combinational path delay: 6.748ns
 
 Timing Details:
 ---------------
@@ -245,21 +275,23 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 8 / 8
+  Total number of paths / destination ports: 61 / 7
 -------------------------------------------------------------------------
-Delay:               4.372ns (Levels of Logic = 2)
-  Source:            BCD<0> (PAD)
-  Destination:       BIN<7> (PAD)
+Delay:               6.748ns (Levels of Logic = 4)
+  Source:            BCD<4> (PAD)
+  Destination:       BIN<4> (PAD)
 
-  Data Path: BCD<0> to BIN<7>
+  Data Path: BCD<4> to BIN<4>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.579  BCD_0_IBUF (BIN_7_OBUF)
-     OBUF:I->O                 2.571          BIN_7_OBUF (BIN<7>)
+     IBUF:I->O             6   1.222   1.089  BCD_4_IBUF (BCD_4_IBUF)
+     LUT6:I1->O            3   0.203   0.879  A_S2/FullAdder0/co1 (A_S2/carry<0>)
+     LUT3:I0->O            1   0.205   0.579  A_S2/FullAdder1/Mxor_sum_xo<0>1 (BIN_4_OBUF)
+     OBUF:I->O                 2.571          BIN_4_OBUF (BIN<4>)
     ----------------------------------------
-    Total                      4.372ns (3.793ns logic, 0.579ns route)
-                                       (86.8% logic, 13.2% route)
+    Total                      6.748ns (4.201ns logic, 2.547ns route)
+                                       (62.3% logic, 37.7% route)
 
 =========================================================================
 
@@ -269,8 +301,8 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.92 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.54 secs
  
 --> 
 
@@ -278,5 +310,5 @@ Total memory usage is 4486440 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

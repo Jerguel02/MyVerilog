@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Verilog/MyVerilog/Controlled_Adder-Subtractor/Adder_Subtractor_Testbench_isim_beh.exe" -prj "D:/Verilog/MyVerilog/Controlled_Adder-Subtractor/Adder_Subtractor_Testbench_beh.prj" "work.Adder_Subtractor_Testbench" "work.glbl" 

@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Verilog/MyVerilog/BCD2Bin/BCD2BIN_Testbench_isim_beh.exe" -prj "D:/Verilog/MyVerilog/BCD2Bin/BCD2BIN_Testbench_beh.prj" "BCD2BIN_Testbench" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Verilog/MyVerilog/BCD2Bin/BCD2Bin_Testbench_isim_beh.exe" -prj "D:/Verilog/MyVerilog/BCD2Bin/BCD2Bin_Testbench_beh.prj" "work.BCD2Bin_Testbench" "work.glbl" 

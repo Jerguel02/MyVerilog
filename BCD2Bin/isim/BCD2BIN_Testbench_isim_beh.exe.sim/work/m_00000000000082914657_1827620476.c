@@ -21,14 +21,13 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/Verilog/MyVerilog/BCD2Bin/BCD2BIN_Testbench.v";
+static const char *ng0 = "D:/Verilog/MyVerilog/BCD2Bin/BCD2Bin_Testbench.v";
 static int ng1[] = {0, 0};
-static unsigned int ng2[] = {99U, 0U};
-static unsigned int ng3[] = {1U, 0U};
+static unsigned int ng2[] = {1U, 0U};
 
 
 
-static void Initial_39_0(char *t0)
+static void Initial_37_0(char *t0)
 {
     char *t1;
     char *t2;
@@ -41,33 +40,23 @@ LAB0:    t1 = (t0 + 2368U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(39, ng0);
+LAB2:    xsi_set_current_line(37, ng0);
 
-LAB4:    xsi_set_current_line(41, ng0);
+LAB4:    xsi_set_current_line(39, ng0);
     t2 = ((char*)((ng1)));
     t3 = (t0 + 1448);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 8);
-    xsi_set_current_line(44, ng0);
+    xsi_set_current_line(42, ng0);
     t2 = (t0 + 2176);
     xsi_process_wait(t2, 100000LL);
     *((char **)t1) = &&LAB5;
 
 LAB1:    return;
-LAB5:    xsi_set_current_line(45, ng0);
-    t2 = ((char*)((ng2)));
-    t3 = (t0 + 1448);
-    xsi_vlogvar_assign_value(t3, t2, 0, 0, 8);
-    xsi_set_current_line(46, ng0);
-    t2 = (t0 + 2176);
-    xsi_process_wait(t2, 100000LL);
-    *((char **)t1) = &&LAB6;
-    goto LAB1;
-
-LAB6:    goto LAB1;
+LAB5:    goto LAB1;
 
 }
 
-static void Always_50_1(char *t0)
+static void Always_47_1(char *t0)
 {
     char t6[8];
     char *t1;
@@ -84,18 +73,18 @@ LAB0:    t1 = (t0 + 2616U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(51, ng0);
+LAB2:    xsi_set_current_line(48, ng0);
 
-LAB4:    xsi_set_current_line(52, ng0);
+LAB4:    xsi_set_current_line(49, ng0);
     t2 = (t0 + 1448);
     t3 = (t2 + 56U);
     t4 = *((char **)t3);
-    t5 = ((char*)((ng3)));
+    t5 = ((char*)((ng2)));
     memset(t6, 0, 8);
     xsi_vlog_unsigned_add(t6, 8, t4, 8, t5, 8);
     t7 = (t0 + 1448);
     xsi_vlogvar_assign_value(t7, t6, 0, 0, 8);
-    xsi_set_current_line(53, ng0);
+    xsi_set_current_line(50, ng0);
     t2 = (t0 + 2424);
     xsi_process_wait(t2, 10000LL);
     *((char **)t1) = &&LAB5;
@@ -106,9 +95,9 @@ LAB5:    goto LAB2;
 }
 
 
-extern void work_m_00000000000082914657_4064416339_init()
+extern void work_m_00000000000082914657_1827620476_init()
 {
-	static char *pe[] = {(void *)Initial_39_0,(void *)Always_50_1};
-	xsi_register_didat("work_m_00000000000082914657_4064416339", "isim/BCD2BIN_Testbench_isim_beh.exe.sim/work/m_00000000000082914657_4064416339.didat");
+	static char *pe[] = {(void *)Initial_37_0,(void *)Always_47_1};
+	xsi_register_didat("work_m_00000000000082914657_1827620476", "isim/BCD2Bin_Testbench_isim_beh.exe.sim/work/m_00000000000082914657_1827620476.didat");
 	xsi_register_executes(pe);
 }
