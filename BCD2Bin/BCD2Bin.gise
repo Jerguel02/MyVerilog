@@ -57,6 +57,10 @@
     <transform xil_pn:end_ts="1703866335" xil_pn:in_ck="-2701628049844052094" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1703866335">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Adder_Subtractor.v"/>
       <outfile xil_pn:name="BCD2Bin.v"/>
       <outfile xil_pn:name="BCD2Bin_Testbench.v"/>
@@ -77,6 +81,11 @@
     <transform xil_pn:end_ts="1703866339" xil_pn:in_ck="-2701628049844052094" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1703866339">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Adder_Subtractor.v"/>
       <outfile xil_pn:name="BCD2Bin.v"/>
       <outfile xil_pn:name="BCD2Bin_Testbench.v"/>
@@ -85,8 +94,11 @@
     <transform xil_pn:end_ts="1703866342" xil_pn:in_ck="-2701628049844052094" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8118567013872970605" xil_pn:start_ts="1703866339">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="BCD2Bin_Testbench_beh.prj"/>
       <outfile xil_pn:name="BCD2Bin_Testbench_isim_beh.exe"/>
@@ -137,7 +149,9 @@
     <transform xil_pn:end_ts="1703866330" xil_pn:in_ck="-7430091222974118357" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-1688965744586070621" xil_pn:start_ts="1703866317">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="BCD2Bin.lso"/>
       <outfile xil_pn:name="BCD2Bin.ngc"/>

@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "D:/Verilog/MyVerilog/JKFF/JKFF.xst" -ofn "D:/Verilog/MyVerilog/JKFF/JKFF.syr" 
+xst -intstyle ise -ifn "D:/Verilog/MyVerilog/JKFF/JKFF.xst" -ofn "D:/Verilog/MyVerilog/JKFF/JKFF.syr" 
+xst -intstyle ise -ifn "D:/Verilog/MyVerilog/JKFF/JKFF.xst" -ofn "D:/Verilog/MyVerilog/JKFF/JKFF.syr" 

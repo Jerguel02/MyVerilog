@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 //
 //
-//Using reverse double dabble algorithm
+//Using 2 full-parallel-adders to convert from BCD to Binary
 //
 //
 module BCD2Bin (input [7:0]BCD, output [6:0]BIN);
