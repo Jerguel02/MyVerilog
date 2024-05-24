@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Xilinx/PS2Keyboard2/tb_monitor_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_monitor" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/tb_monitor/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_monitor/ce" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+      <obj_property name="label">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_monitor/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_monitor/ps2c" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ps2c</obj_property>
+      <obj_property name="ObjectShortName">ps2c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_monitor/ps2d" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ps2d</obj_property>
+      <obj_property name="ObjectShortName">ps2d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_monitor/tx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+</wave_config>

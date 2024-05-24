@@ -55,6 +55,10 @@
     <transform xil_pn:end_ts="1703150590" xil_pn:in_ck="8268545739308956037" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1703150590">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="D_FF.v"/>
       <outfile xil_pn:name="FF_D_Testbench.v"/>
     </transform>
@@ -73,13 +77,21 @@
     <transform xil_pn:end_ts="1703150593" xil_pn:in_ck="8268545739308956037" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1703150593">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="D_FF.v"/>
       <outfile xil_pn:name="FF_D_Testbench.v"/>
     </transform>
     <transform xil_pn:end_ts="1703150596" xil_pn:in_ck="8268545739308956037" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-961922873198932471" xil_pn:start_ts="1703150593">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FF_D_Testbench_beh.prj"/>
       <outfile xil_pn:name="FF_D_Testbench_isim_beh.exe"/>
@@ -91,6 +103,7 @@
     <transform xil_pn:end_ts="1703150596" xil_pn:in_ck="928860998345003805" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2661383734948291596" xil_pn:start_ts="1703150596">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FF_D_Testbench_isim_beh.wdb"/>
@@ -125,7 +138,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1703150442" xil_pn:in_ck="2776462675" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="6858727692383614526" xil_pn:start_ts="1703150435">
+    <transform xil_pn:end_ts="1704174637" xil_pn:in_ck="2776462675" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="6858727692383614526" xil_pn:start_ts="1704174624">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="D_FF.lso"/>
